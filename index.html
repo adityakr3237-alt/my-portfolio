@@ -3,129 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Full-Stack Developer</title>
+  <title>My Portfolio</title>
+  
+  <!-- Google Fonts (Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <marquee behavior="" direction="">
-            WELCOME ON MY ONE PAGE PORTFOLIO
-  </marquee>
+<body id="top">
 
-  <!-- Header & Navigation -->
-  
+  <!-- Sticky Header & Navigation Bar -->
   <header>
-  
+    <h1>My Portfolio</h1>
     <nav>
-      <ul>
-        <li><a href="#home">Home</li></a>
-        <li><a href="#about">About</li></a>
-        <li><a href="#projects">projects</li></a>
-        <li><a href="#skills">Skills</li></a>
-        <li><a href="#contact">Contact</li></a>
-      </ul>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <hr>
-
-    <h1><b>Hello, I'm Aditya Kumar</b></h1>
-      <p>I am B.tech CSE student in KRMU.</p>
-      
-      <hr>
   </header>
-  <main>
-  
 
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="https://www.bing.com/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&dpr=1.
-      3&pid=ImgAns&rm=2" alt="" width="200" height="200">
-      <p>I'm Aditya, a btech computer science engineering student.
-      I have recently completed my 12th from KV IOC, I'm intrested in technology, coding and software development.
-      Currently I'm learing python and web development.</p>
-    </section>
+  <!-- About Me Section -->
+  <section id="about" class="section-container">
+    <h2>About Me</h2>
+    <div class="profile-container">
+      <!-- You can replace the src with your local file path: images/profile.png -->
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile Picture of John Doe" class="profile-img">
+    </div>
+    <p class="about-text">Hello! My name is Aditya kumar. I am learning web development and this is my first portfolio website.</p>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Featured Projects</h2>
+  <hr class="separator">
 
-      <article>
-        <h3> Portfolio Website</h3>
-        <p>A personal one page website to showcase your bio, skills,
-         and contact deatails.</p>
-      </article>
+  <!-- My Skills Section -->
+  <section id="skills" class="section-container">
+    <h2>My Skills</h2>
+    <table class="skills-table">
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Learning</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-      <article>
-        <h3>Python begineer programs</h3>
-        <p> A simple python programmer</p>
-      </article>
-    </section>
+  <hr class="separator">
 
-    <!-- Skills Table Section -->
-    <section id="skills">
-      <h2>Technical Skills & Tools</h2>
-      <table border="2" cellpadding="" cellspacing="5">
-        <thead>
-            <tr>
-                <th>HTML</th>
-                <th>CSS</th>
-                <th>JAVA</th>
-                <th>PYTHON</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Begineer</td>
-                <td>Begineer</td>
-                <td>Begineer</td>
-                <td>Begineer</td>
-            </tr>
-        </tbody>
+  <!-- My Projects Section -->
+  <section id="projects" class="section-container">
+    <h2>My Projects</h2>
+    <div class="projects-list">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A simple HTML & CSS webpage.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Another awesome mini project.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="separator">
+
+  <!-- Contact Me Section -->
+  <section id="contact" class="section-container">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="#" method="post">
+      <table class="form-table">
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+        </tr>
+        <tr>
+          <td><label for="message">Message:</label></td>
+          <td><textarea id="message" name="message" rows="3" placeholder="Write your message" required></textarea></td>
+        </tr>
       </table>
-    </section>
+      <div class="form-submit-container">
+        <button type="submit" class="btn btn-submit">Send</button>
+      </div>
+    </form>
+  </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out if you'd like to collaborate, ask a question, or just say hello!</p>
-      
-      <form action="" method="POST">
-        <div>
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" placeholder="John Doe" required>
-        </div>
-        <br>
-
-        <div>
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
-        </div>
-        <br>
-
-        <div>
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
-        </div>
-        <br>
-
-        <div>
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" rows="" placeholder="Write your message here..." required></textarea>
-        </div>
-        <br>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-  </main>
-  <hr>
-
-  <!-- Footer -->
-  <footer>
-    <p>Made by Aditya</p>
-    <a href="https://github.com/adityakr3237-alt" target="_blanks">Github</a>
-    <br>
-    <a href="https://www.linkedin.com/in/aditya-kumar-a40a89430/" target="_blank">LinkedIn</a>
-  </footer>
+  <!-- Back to Top Button -->
+  <a href="#top" class="back-to-top">↑ Back to Top</a>
 
 </body>
 </html>
